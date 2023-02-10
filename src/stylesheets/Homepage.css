@@ -1,0 +1,203 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+
+.subheading {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin: 0;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    width: 101%;
+    -webkit-animation: fadeIn 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: fadeIn 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.homepage-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40em;
+}
+
+.heading {
+    font-family: 'Teko';
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 12rem;
+    margin: 0;
+    max-width: min-content;
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.links {
+    display: flex;
+    width: max-content;
+    gap: 1em;
+    width: 100%;
+    -webkit-animation: swing-in-top-fwd 2.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 2.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.links>a {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--bg-secondary);
+}
+
+.links>a>svg {
+    height: 3em;
+}
+
+.links>a>svg:hover {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+}
+
+
+/**
+ * ----------------------------------------
+ * Text brackets
+ * ----------------------------------------
+ */
+h2:before {
+    content: '[';
+    font-size: 18rem;
+    margin-right: 0.2em;
+}
+
+h2:after {
+    content: ']';
+    font-size: 18rem;
+    margin-left: 0.2em;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.3em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.3em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation fadeIn
+ * ----------------------------------------
+ */
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
