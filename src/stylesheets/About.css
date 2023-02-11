@@ -1,0 +1,98 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-info-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 50vw;
+    height: 100%;
+    background-color: var(--bg-secondary);
+    -webkit-animation: slideIn 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+    animation: slideIn 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+}
+
+.about-content {
+    color: var(--bg-primary);
+    margin-bottom: 10em;
+}
+
+.about-info {
+    font-size: 2rem;
+    width: 15em;
+}
+
+.about-heading {
+    font-size: 5rem;
+    font-family: 'Teko';
+}
+
+.skills-section {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    font-size: 1.5rem;
+}
+
+.skills-category {
+    width: 6em;
+    line-height: 1.8em;
+}
+
+.skills-list>li {
+    list-style-type:circle;
+}
+
+.next-section {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.about-image-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-right: 12em;
+    -webkit-animation: fade-in 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: fade-in 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.about-image-container>img {
+    width: 40em;
+}
+
+/**
+ * ----------------------------------------
+ * animation slideIn
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slideIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50vw;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50vw;
+    }
+}
