@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5em;
 }
 
 .project-image-container {
@@ -12,16 +13,16 @@
     width: 45em;
     height: 25em;
     margin-top: 2.3em;
+    border: 1em solid var(--bg-secondary);
 }
 
 .project-image-container>img {
-    width: 100%;
-    height: 100%;
-    border: 1em solid var(--bg-secondary);
+    width: 100vw;
 }
 
 .projects-content {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     margin-top: 5em;
@@ -51,12 +52,13 @@
     width: 20em;
     color: var(--bg-primary);
 }
+
 /**
  * ----------------------------------------
  * Text brackets
  * ----------------------------------------
  */
- .brackets-wrapper:before {
+.brackets-wrapper:before {
     content: '[';
     line-height: 0;
     font-size: 26rem;
@@ -81,6 +83,7 @@
     color: var(--bg-primary);
     margin: 1em;
     margin-top: 0;
+    text-decoration: none;
 }
 
 .project-links>a:after {
@@ -95,10 +98,6 @@
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
 }
-.project-links>a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 
 .project-description {
     line-height: 1.5em;
@@ -111,6 +110,7 @@
     gap: 0.5em;
     margin-top: 1em;
 }
+
 .project-tech>li {
     list-style-type: none;
     color: var(--bg-secondary);
@@ -134,16 +134,75 @@
     cursor: pointer;
     width: 2em;
     height: 2em;
-    background: var(--bg-primary);
     border: 1px solid var(--bg-primary);
     border-radius: 50%;
 }
 
-.slide-bg {
+.selected {
+    background-color: var(--bg-primary);
+}
+
+.slide-bg-container {
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
     align-self: flex-end;
+    width: 80vw;
+    height: 100vh;
+    transition: width .2s;
+}
+
+.slide-bg {
+    justify-self: center;
     height: 100vh;
     background-color: var(--bg-secondary);
-    -webkit-animation: projects-slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
-    animation: projects-slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+    -webkit-animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+    animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+}
+
+@media screen and (max-width: 1415px) {
+    .slide-bg-container {
+        width: 100vw;
+        align-self: center;
+    }
+
+    .projects {
+        overflow-x: hidden;
+    }
+
+    .project-image-container {
+        align-items: flex-start;
+        background-color: var(--bg-secondary);
+        margin-top: 0;
+    }
+
+    .project-image-container>img {
+        color: var(--bg-primary);
+    }
+
+    .projects-content {
+        order: 2;
+        margin-top: 0;
+    }
+
+    .project-description {
+        text-align: center;
+    }
+
+    .projects-nav {
+        order: 1;
+        margin-top: 4em;
+    }
+}
+
+/**Removes hover effects on touch devices **/
+@media not all and (hover: none) {
+    .project-links>a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .projects-nav>div:hover {
+        background-color: var(--bg-primary);
+    }
 }

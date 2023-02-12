@@ -13,7 +13,7 @@ const projectData = [
         title: 'MEMORY CARD GAME',
         tech: ['HTML', 'CSS', 'JavaScript', 'React'],
         description: 'A browser game that requires the player to avoid clicking on the same colour twice. This project was completed as part of \'The Odin Project\' curriculum.',
-        image: '',
+        image: images.memoryGame,
         sourceCode: 'https://github.com/emilydta/memory-card-game',
         demo: 'https://emilydta.github.io/memory-card-game'
     }

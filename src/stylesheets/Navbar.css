@@ -1,10 +1,10 @@
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
     padding: 2em;
-    width: 100vw;
+    width: 100%;
     border-bottom: 0.2em var(--bg-secondary) solid;
     background-color: var(--bg-primary);
     z-index: 5;
@@ -28,13 +28,17 @@
     text-decoration: none;
 }
 
-.nav-link:hover {
-    background-color: var(--bg-secondary);
-    color: var(--bg-primary);
-}
-
 .active {
     font-style: italic;
     font-weight: 900;
     text-decoration: underline;
+}
+
+
+/**Removes hover effects on touch devices **/
+@media not all and (hover: none) {
+    .nav-link:hover {
+        background-color: var(--bg-secondary);
+        color: var(--bg-primary);
+    }
 }
