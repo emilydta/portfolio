@@ -1,21 +1,14 @@
 import { default as aboutMe } from '../images/about_me.svg';
-import { useState } from 'react';
 import '../stylesheets/About.css';
 
 function About() {
-    const [currentSection, setCurrentSection] = useState(0);
-
-    const nextSection = () => {
-        currentSection === 0 ? setCurrentSection(1) : setCurrentSection(0);
-    }
-
     const intro = <div className='about-info'>
         <h1 className='about-heading'>HELLO!</h1>
         <p className='about-paragraph'>
             I'm a fullstack developer from Melbourne, Australia with a keen interest for tackling problems through code and design.
         </p>
     </div>
-    const skills = <>
+    const skills = <div className='about-skills'>
         <h1 className='about-heading'>Technologies</h1>
         <div className='skills-section'>
             <div className='skills-category'>
@@ -43,34 +36,27 @@ function About() {
                 <h2 className='skills-heading'>Misc.</h2>
                 <ul className='skills-list'>
                     <li>Git</li>
-                    <li>Test Driven Development(TDD)</li>
+                    <li>TDD</li>
                     <li>Linux</li>
                 </ul>
             </div>
         </div>
-    </>
-
-    const sections = [
-        intro,
-        skills
-    ]
+    </div>
 
     return (
         <div className='about'>
-            <div className='about-info-bg'>
-                <div className='about-content'>
-                    <>{sections[currentSection]}</>
-                    <p className='next-section'
-                        onClick={() => nextSection()}
-                    >{currentSection === 0 ? '→' : '←'}
-                    </p>
+            <div className='about-slide-bg-container'>
+                <div className='about-slide-bg'>
+                    <div className='about-content'>
+                        {intro}
+                    </div>
                 </div>
             </div>
-
 
             <div className='about-image-container'>
                 <img src={aboutMe} alt='About me'></img>
             </div>
+            {skills}
         </div>
     )
 }
