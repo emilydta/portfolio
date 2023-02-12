@@ -9,28 +9,30 @@ function Projects() {
         setCurrentIndex(projectIndex);
     }
 
+    const {title, description, image, demo, sourceCode, tech} = projectData[currentIndex];
+
     return (
         <div className="projects">
             <div className="slide-bg"></div>
             <div className='projects-content'>
                 <div className='project-display'>
-                    <div className='project'>
-                        <img src={projectData[currentIndex].image} alt={`${projectData[currentIndex].title}`}></img>
+                    <div className='project-image-container'>
+                        <img src={image} alt={`${title}`}></img>
                     </div>
                 </div>
                 <div className='brackets-wrapper'>
                     <div className='projects-info'>
-                        <h1 className='project-title'>{projectData[currentIndex].title}</h1>
+                        <h1 className='project-title'>{title}</h1>
                         <div className='project-links'>
-                            <a href={projectData[currentIndex].demo} target='_blank' rel='noreferrer'>Demo</a>
-                            <a href={projectData[currentIndex].sourceCode} target='_blank' rel='noreferrer'>Source Code</a>
+                            <a href={demo} target='_blank' rel='noreferrer'>Demo</a>
+                            <a href={sourceCode} target='_blank' rel='noreferrer'>Source Code</a>
                         </div>
                         <ul className='project-tech'>
-                            {projectData[currentIndex].tech.map((tech, techIndex) =>
+                            {tech.map((tech, techIndex) =>
                                 <li key={techIndex}>{tech}</li>
                             )}
                         </ul>
-                        <p className='project-description'>{projectData[currentIndex].description}</p>
+                        <p className='project-description'>{description}</p>
                     </div>
                 </div>
             </div>

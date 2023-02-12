@@ -22,7 +22,7 @@ function About() {
                 <h2 className='skills-heading'>Frontend</h2>
                 <ul className='skills-list'>
                     <li>HTML</li>
-                    <li>Css</li>
+                    <li>CSS</li>
                     <li>Tailwind CSS</li>
                     <li>JavaScript</li>
                     <li>Typescript</li>
