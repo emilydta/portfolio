@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.10b467d9.css",
-    "main.js": "/portfolio/static/js/main.8e379e33.js",
+    "main.css": "/portfolio/static/css/main.9b8a2773.css",
+    "main.js": "/portfolio/static/js/main.b61db067.js",
     "static/media/acnh_critter_guide.gif": "/portfolio/static/media/acnh_critter_guide.7bcef12e23aaa2a34734.gif",
     "static/media/memory_game.gif": "/portfolio/static/media/memory_game.8733c8bb7f277ebafc12.gif",
     "static/media/inter-tight-all-400-normal.woff": "/portfolio/static/media/inter-tight-all-400-normal.269169f8e9744129cf2d.woff",
@@ -23,11 +23,11 @@
     "static/media/inter-tight-vietnamese-400-normal.woff2": "/portfolio/static/media/inter-tight-vietnamese-400-normal.2050feec02a8f71cac19.woff2",
     "static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.2105bac308c61321fc04.woff2",
     "index.html": "/portfolio/index.html",
-    "main.10b467d9.css.map": "/portfolio/static/css/main.10b467d9.css.map",
-    "main.8e379e33.js.map": "/portfolio/static/js/main.8e379e33.js.map"
+    "main.9b8a2773.css.map": "/portfolio/static/css/main.9b8a2773.css.map",
+    "main.b61db067.js.map": "/portfolio/static/js/main.b61db067.js.map"
   },
   "entrypoints": [
-    "static/css/main.10b467d9.css",
-    "static/js/main.8e379e33.js"
+    "static/css/main.9b8a2773.css",
+    "static/js/main.b61db067.js"
   ]
 }
