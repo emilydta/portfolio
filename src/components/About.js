@@ -9,7 +9,7 @@ function About() {
         </p>
     </div>
     const skills = <div className='about-skills'>
-        <h1 className='about-heading'>Technologies</h1>
+        <h1 className='about-heading' id='tech-heading'>Technologies</h1>
         <div className='skills-section'>
             <div className='skills-category'>
                 <h2 className='skills-heading'>Frontend</h2>
