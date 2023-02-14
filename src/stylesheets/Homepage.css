@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 100vh;
 }
 
 .subheading {
@@ -38,6 +37,7 @@
     justify-content: center;
     align-items: center;
     width: 40em;
+    padding-bottom: 4em;
 }
 
 .heading {
@@ -96,6 +96,7 @@
         margin-top: 10em;
         overflow-x: hidden;
     }
+
     .heading {
         font-size: 6rem;
     }
@@ -103,7 +104,7 @@
     .heading:before {
         font-size: 9rem;
     }
-    
+
     .heading:after {
         font-size: 9rem;
     }
@@ -122,6 +123,29 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 5rem;
+    }
+
+    .subheading {
+        width: 40%;
+    }
+
+    .links {
+        width: 40%;
+    }
+
+    /** Remove text brackets **/
+    .heading:before {
+        content: '';
+    }
+
+    .heading:after {
+        content: '';
+    }
+}
+
 /**Removes hover effects on touch devices **/
 @media not all and (hover: none) {
     .links>a>svg:hover {
@@ -129,4 +153,3 @@
         color: var(--bg-primary);
     }
 }
-
