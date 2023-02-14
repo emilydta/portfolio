@@ -25,13 +25,8 @@ function Navbar() {
                 <div className={`nav-link-container ${openMenu && 'display-none'}`}><NavLink to='/about' className='nav-link'>About</NavLink></div>
                 <div className={`nav-link-container ${openMenu && 'display-none'}`}><NavLink to='/projects' className='nav-link'>Projects</NavLink></div>
                 <div className={`contact-link ${openMenu && 'display-none'}`}>
-                    <a
-                        href='http'
-                        target='_blank'
-                        rel='noreferrer'>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
-                    <p className='contact-me-text'>Contact Me</p>
+                    <a href='mailto:emilydta.dev@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href='mailto:emilydta.dev@gmail.com' className='contact-me-text'>Contact Me</a>
                 </div>
             </div>
         </div>

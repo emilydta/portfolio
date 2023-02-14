@@ -42,6 +42,8 @@
 
 .contact-me-text {
     cursor: pointer;
+    color: var(--bg-secondary);
+    text-decoration: none;
     display: flex;
     justify-content: flex-end;
     position: absolute;
