@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     padding: 2em;
+    padding-left: 0;
     width: 100%;
     border-bottom: 0.2em var(--bg-secondary) solid;
     background-color: var(--bg-primary);
@@ -16,6 +17,7 @@
 .navbar-contents {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: max-content;
     gap: 6em;
     list-style-type: none;
@@ -29,17 +31,126 @@
     text-decoration: none;
 }
 
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    right: 5em;
+    -webkit-animation: pulse-in 1.5s ease-in-out both;
+    animation: pulse-in 1.5s ease-in-out both;
+}
+
+.contact-me-text {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    align-items: center;
+    overflow: hidden;
+    width: 2em;
+    white-space: nowrap;
+    opacity: 0;
+    transition: width .9s, opacity .3s;
+}
+
+.contact-link>a>svg {
+    height: 1.5em;
+    color: var(--bg-secondary);
+    transition: transform .2s;
+}
+
 .active {
     font-style: italic;
     font-weight: 900;
     text-decoration: underline;
 }
 
+/** -------- Hamburger Nav ----------**/
+.hamburger {
+    display: none;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.hamburger-links-container {
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    padding-top: 3em;
+    -webkit-animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+    animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+}
+
+.close-hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    transition: transform .2s;
+}
+
+.hide-overflow-y {
+    overflow-y: hidden;
+}
+
+/** --------------------------------- **/
+
+@media screen and (max-width: 1050px) {
+    .contact-me-text {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-link-container {
+        display: none;
+    }
+
+    .navbar-contents {
+        gap: 2em;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+.display-none {
+    display: none;
+}
 
 /**Removes hover effects on touch devices **/
 @media not all and (hover: none) {
     .nav-link:hover {
         background-color: var(--bg-secondary);
         color: var(--bg-primary);
+    }
+
+    .contact-me-text:hover {
+        opacity: 1;
+        width: 7em;
+        transition: width .3s, opacity .9s;
+    }
+
+    .hamburger:hover {
+        transform: scale(1.5);
+    }
+
+    .close-hamburger:hover {
+        transform: scale(1.5);
+    }
+
+    @media screen and (max-width: 1050px) {
+        .contact-link>a>svg:hover {
+            transform: scale(1.3);
+        }
     }
 }
