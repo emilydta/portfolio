@@ -12,9 +12,7 @@
 }
 
 .about-slide-bg {
-
     position: absolute;
-
     height: 100%;
     width: 100%;
     background-color: var(--bg-secondary);
@@ -24,12 +22,14 @@
 
 .about-content {
     display: flex;
-    margin-left: 10em;
-    margin-top: 10em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
     color: var(--bg-primary);
 }
 
 .about-info {
+    padding: 1em;
     font-size: 2rem;
     width: 15em;
 }
@@ -200,7 +200,6 @@
 
 @media screen and (max-width: 547px) {
     .about-info {
-        margin-left: 2em;
         width: 10em;
     }
 
@@ -215,10 +214,6 @@
 }
 
 @media screen and (max-width: 330px) {
-
-    .about-info {
-        margin-left: 1em;
-    }
 
     #tech-heading {
         font-size: 3rem;
