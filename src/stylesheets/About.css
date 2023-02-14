@@ -63,7 +63,6 @@
 }
 
 .skills-category {
-    width: 6em;
     line-height: 1.8em;
 }
 
@@ -191,10 +190,6 @@
         padding-bottom: 3em;
         margin-left: 0;
     }
-
-    .skills-section {
-        margin-left: 2em;
-    }
 }
 
 @media screen and (max-width: 547px) {
@@ -216,10 +211,6 @@
 
     #tech-heading {
         font-size: 3rem;
-    }
-
-    .skills-section {
-        margin-left: 2em;
     }
 }
 
