@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45a119e7.css",
-    "main.js": "/portfolio/static/js/main.b61db067.js",
+    "main.css": "/portfolio/static/css/main.428b119d.css",
+    "main.js": "/portfolio/static/js/main.20e20011.js",
     "static/media/acnh_critter_guide.gif": "/portfolio/static/media/acnh_critter_guide.7bcef12e23aaa2a34734.gif",
     "static/media/memory_game.gif": "/portfolio/static/media/memory_game.8733c8bb7f277ebafc12.gif",
     "static/media/inter-tight-all-400-normal.woff": "/portfolio/static/media/inter-tight-all-400-normal.269169f8e9744129cf2d.woff",
@@ -13,7 +13,7 @@
     "static/media/inter-tight-latin-400-normal.woff2": "/portfolio/static/media/inter-tight-latin-400-normal.2194b5bbaf814b3dacfc.woff2",
     "static/media/ibm-plex-sans-condensed-latin-ext-400-normal.woff2": "/portfolio/static/media/ibm-plex-sans-condensed-latin-ext-400-normal.9e60a4c49574301daa8c.woff2",
     "static/media/teko-latin-400-normal.woff2": "/portfolio/static/media/teko-latin-400-normal.7e4a0c1568a7f9fb9df1.woff2",
-    "static/media/about_me.svg": "/portfolio/static/media/about_me.b424a15bbed5124365b68ae9c6c2eb93.svg",
+    "static/media/about_me.svg": "/portfolio/static/media/about_me.69ea1b3ad33c542b022307b1a8059254.svg",
     "static/media/inter-tight-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/inter-tight-cyrillic-ext-400-normal.e4e763a3f810562c5c7f.woff2",
     "static/media/teko-latin-ext-400-normal.woff2": "/portfolio/static/media/teko-latin-ext-400-normal.d479107ceaab1395f5c4.woff2",
     "static/media/inter-tight-greek-400-normal.woff2": "/portfolio/static/media/inter-tight-greek-400-normal.46fcddd00928d9a4acd8.woff2",
@@ -23,11 +23,11 @@
     "static/media/inter-tight-vietnamese-400-normal.woff2": "/portfolio/static/media/inter-tight-vietnamese-400-normal.2050feec02a8f71cac19.woff2",
     "static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.2105bac308c61321fc04.woff2",
     "index.html": "/portfolio/index.html",
-    "main.45a119e7.css.map": "/portfolio/static/css/main.45a119e7.css.map",
-    "main.b61db067.js.map": "/portfolio/static/js/main.b61db067.js.map"
+    "main.428b119d.css.map": "/portfolio/static/css/main.428b119d.css.map",
+    "main.20e20011.js.map": "/portfolio/static/js/main.20e20011.js.map"
   },
   "entrypoints": [
-    "static/css/main.45a119e7.css",
-    "static/js/main.b61db067.js"
+    "static/css/main.428b119d.css",
+    "static/js/main.20e20011.js"
   ]
 }
