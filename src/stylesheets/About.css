@@ -119,9 +119,8 @@
 
     .about-image-container {
         position: fixed;
-        justify-content: flex-end;
+        left: 23em;
         bottom: 0;
-        top: 20em;
     }
 
     .about-skills {
