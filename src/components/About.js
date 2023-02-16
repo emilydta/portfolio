@@ -1,54 +1,26 @@
-import { default as aboutMe } from '../images/about_me.svg';
-import '../stylesheets/About.css';
+import { default as aboutMe } from '../../images/about_me.svg';
+import '../../stylesheets/About.css';
+import toggleAnimation from './utils/animationFunctions';
+import Intro from './sub-components/Intro';
+import Skills from './sub-components/Skills';
+import { useState } from 'react';
 
 function About() {
-    const intro = <div className='about-info'>
-        <h1 className='about-heading'>HELLO!</h1>
-        <p className='about-paragraph'>
-            I'm a fullstack developer from Melbourne, Australia with a keen interest for tackling problems through code and design.
-        </p>
-    </div>
-    const skills = <div className='about-skills'>
-        <h1 className='about-heading' id='tech-heading'>Technologies</h1>
-        <div className='skills-section'>
-            <div className='skills-category'>
-                <h2 className='skills-heading'>Frontend</h2>
-                <ul className='skills-list'>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Tailwind CSS</li>
-                    <li>JavaScript</li>
-                    <li>Typescript</li>
-                    <li>Webpack</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div className='skills-category'>
-                <h2 className='skills-heading'>Backend</h2>
-                <ul className='skills-list'>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>Mongoose</li>
-                </ul>
-            </div>
-            <div className='skills-category'>
-                <h2 className='skills-heading'>Misc.</h2>
-                <ul className='skills-list'>
-                    <li>Git</li>
-                    <li>TDD</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    const [currentSlide, setCurrentSlide] = useState({intro});
+    const [toggleFade, setToggleFade] = useState('');
+
+    const nextSlide = (slide) => {
+        toggleAnimation(setToggleFade);
+        setCurrentSlide(slide);
+    }
 
     return (
         <div className='about'>
             <div className='about-slide-bg-container'>
                 <div className='about-slide-bg'>
                     <div className='about-content'>
-                        {intro}
+                        {introContinued}
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -56,7 +28,7 @@ function About() {
             <div className='about-image-container'>
                 <img src={aboutMe} alt='About me'></img>
             </div>
-            {skills}
+            <Skiils />
         </div>
     )
 }
