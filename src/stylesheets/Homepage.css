@@ -151,5 +151,7 @@
     .links>a>svg:hover {
         background-color: var(--bg-secondary);
         color: var(--bg-primary);
+        border-radius: 50%;
+        outline: solid 0.125em var(--bg-secondary);
     }
 }
