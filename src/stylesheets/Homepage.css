@@ -167,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 475px) {
     .heading {
         font-size: 5rem;
     }
@@ -189,7 +189,7 @@
     }
 }
 
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 390px) {
     .heading:before {
         margin-right: 0.02em;
     }
