@@ -15,7 +15,7 @@ function Homepage() {
               <a href='https://github.com/emilydta' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
               <div className='greeting-container'>
                 <FontAwesomeIcon className='smiley-face' icon={faFaceSmileBeam} />
-                <p tabindex='0' className='greeting-text'>Nice to meet you!</p>
+                <p tabIndex='0' className='greeting-text'>Nice to meet you!</p>
               </div>
             </section>
           </header>
