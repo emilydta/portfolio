@@ -8,8 +8,8 @@ function About() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     return (
-        <div className='about'>
-            <div className='about-slide-bg-container'>
+        <main className='about'>
+            <section className='about-slide-bg-container'>
                 <div className={`about-slide-bg ${currentSlide === 0 && 'slide-0-height'}`}>
                     <div className='about-content'>
                         <Intro
@@ -18,12 +18,12 @@ function About() {
                         />
                     </div>
                 </div>
-            </div>
-            <div className='about-image-container'>
+            </section>
+            <figure className='about-image-container'>
                 <img src={aboutMe} alt='About me'></img>
-            </div>
+            </figure>
             <Skills />
-        </div>
+        </main>
     )
 }
 

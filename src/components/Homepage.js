@@ -5,24 +5,23 @@ import { faFaceSmileBeam} from '@fortawesome/free-regular-svg-icons';
 
 function Homepage() {
   return (
-    <div className='homepage'>
+    <main className='homepage'>
       <div className='homepage-wrapper'>
         <div className='homepage-contents'>
-          <div className='heading-container'>
+          <header className='heading-container'>
             <h1 className='subheading'>I'M EMILY, A</h1>
             <h2 className='heading'>FULLSTACK DEVELOPER</h2>
-            <div className='links'>
+            <section className='links'>
               <a href='https://github.com/emilydta' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
               <div className='greeting-container'>
                 <FontAwesomeIcon className='smiley-face' icon={faFaceSmileBeam} />
-                <p className='greeting-text'>Nice to meet you!</p>
+                <p tabindex='0' className='greeting-text'>Nice to meet you!</p>
               </div>
-
-            </div>
-          </div>
+            </section>
+          </header>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

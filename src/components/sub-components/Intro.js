@@ -11,14 +11,14 @@ function Intro({
         toggleAnimation(setToggleFade);
         currentSlide === 0 ? setCurrentSlide(1) : setCurrentSlide(0);
     }
-    const Slide0 = <div className={`about-info ${toggleFade}`}>
+    const Slide0 = <section className={`about-info ${toggleFade}`}>
         <h1 className='about-heading'>HELLO!</h1>
         <p className='about-paragraph'>
             I'm a fullstack developer from Melbourne, Australia with a keen interest for tackling problems through code and design.
         </p>
-    </div>
+    </section>
 
-    const Slide1 = <div className={`about-info extended ${toggleFade}`}>
+    const Slide1 = <section className={`about-info extended ${toggleFade}`}>
         <p className='about-paragraph'>
             My interests span a diverse range, but coding, music, and art, are my primary pursuits. Each of these areas allow me to express myself and my creativity.
         </p>
@@ -28,7 +28,7 @@ function Intro({
         <p className='about-paragraph'>
             When I'm not coding, I'm typically preoccupied with creating music or art. Whether I'm making my own tunes or sketching a new character design, it's always a fun time. This creative fusion gives me the opportunity to bring my ideas to life in ways that are both functional and visually exciting.
         </p>
-    </div>
+    </section>
 
     const slideArray = [Slide0, Slide1];
     return (

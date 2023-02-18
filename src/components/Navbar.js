@@ -14,7 +14,7 @@ function Navbar() {
 
 
     return (
-        <div className='navbar'>
+        <nav className='navbar'>
             <div className='navbar-contents'>
                 <HamburgerNav
                     openMenu={openMenu}
@@ -29,7 +29,7 @@ function Navbar() {
                     <a href='mailto:emilydta.dev@gmail.com' className='contact-me-text'>Contact Me</a>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }
 

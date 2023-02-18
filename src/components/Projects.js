@@ -15,18 +15,18 @@ function Projects() {
     const { title, description, image, demo, sourceCode, tech } = projectData[currentIndex];
 
     return (
-        <div className="projects">
+        <main className="projects">
             <div className='slide-bg-container'>
                 <div className="slide-bg"></div>
             </div>
-            <div className='projects-content'>
-                <div className='project-display'>
+            <section className='projects-content'>
+                <figure className='project-display'>
                     <div className='project-image-container'>
                         <img className={`${toggleFade}`} src={image} alt={`${title}`}></img>
                     </div>
-                </div>
-                <div className='brackets-wrapper'>
-                    <div className={`projects-info ${toggleFade}`}>
+                </figure>
+                <section className='brackets-wrapper'>
+                    <article className={`projects-info ${toggleFade}`}>
                         <h1 className='project-title'>{title}</h1>
                         <div className='project-links'>
                             <a href={demo} target='_blank' rel='noreferrer'>Demo</a>
@@ -38,18 +38,18 @@ function Projects() {
                             )}
                         </ul>
                         <p className='project-description'>{description}</p>
-                    </div>
-                </div>
-            </div>
-            <div className='projects-nav'>
+                    </article>
+                </section>
+            </section>
+            <section className='projects-nav'>
                 {projectData.map((project, projectIndex) => (
                     <div className={`${projectIndex === currentIndex && 'selected'}`}
                         key={projectIndex}
                         onClick={() => goToProject(projectIndex)}>
                     </div>
                 ))}
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 

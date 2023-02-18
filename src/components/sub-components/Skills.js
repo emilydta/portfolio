@@ -1,9 +1,9 @@
 function Skills() {
     return (
-        <div className='about-skills'>
+        <section className='about-skills'>
             <h1 className='about-heading' id='tech-heading'>Technologies</h1>
-            <div className='skills-section'>
-                <div className='skills-category'>
+            <section className='skills-section'>
+                <article className='skills-category'>
                     <h2 className='skills-heading'>Frontend</h2>
                     <ul className='skills-list'>
                         <li>HTML</li>
@@ -14,8 +14,8 @@ function Skills() {
                         <li>Webpack</li>
                         <li>React</li>
                     </ul>
-                </div>
-                <div className='skills-category'>
+                </article>
+                <article className='skills-category'>
                     <h2 className='skills-heading'>Backend</h2>
                     <ul className='skills-list'>
                         <li>Node</li>
@@ -23,17 +23,17 @@ function Skills() {
                         <li>MongoDB</li>
                         <li>Mongoose</li>
                     </ul>
-                </div>
-                <div className='skills-category'>
+                </article>
+                <article className='skills-category'>
                     <h2 className='skills-heading'>Misc.</h2>
                     <ul className='skills-list'>
                         <li>Git</li>
                         <li>TDD</li>
                         <li>Linux</li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </section>
     )
 }
 
