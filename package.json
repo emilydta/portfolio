@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://emilydta.github.io/portfolio/",
+  "homepage": "https://emilydta.dev",
   "private": true,
   "dependencies": {
     "@fontsource/ibm-plex-sans-condensed": "^4.5.11",
