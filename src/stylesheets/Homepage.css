@@ -71,6 +71,7 @@
 
 .links>a>svg {
     height: 3em;
+    transition: transform .2s;
 }
 
 .greeting-container {
@@ -119,6 +120,14 @@
     transition: margin .5s;
 }
 
+@media screen and (max-width: 1400px) {
+    .greeting-text:focus {
+        opacity: 1;
+        width: 10em;
+        transition: width .3s, opacity 1.5s;
+    }
+}
+
 @media screen and (max-width: 940px) {
 
     .homepage {
@@ -148,7 +157,8 @@
         gap: .5em;
     }
 
-    .links>a>svg, .smiley-face {
+    .links>a>svg,
+    .smiley-face {
         height: 2em;
     }
 
@@ -192,10 +202,7 @@
 /**Removes hover effects on touch devices **/
 @media not all and (hover: none) {
     .links>a>svg:hover {
-        background-color: var(--bg-secondary);
-        color: var(--bg-primary);
-        border-radius: 50%;
-        outline: solid 0.125em var(--bg-secondary);
+        transform: scale(1.2);
     }
 
     .greeting-text:hover {
