@@ -190,7 +190,6 @@
         margin-left: 0;
     }
 
-
     .next-buttons {
         margin-right: 0;
     }
@@ -238,8 +237,7 @@
 
 @media screen and (max-width: 547px) {
     .about-info {
-        width: 10em;
-        margin-left: 1em;
+        width: 9em;
     }
 
     .about-paragraph {
