@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.21d46ae7.css",
+    "main.css": "/static/css/main.c3113914.css",
     "main.js": "/static/js/main.95256964.js",
     "static/media/acnh_critter_guide.gif": "/static/media/acnh_critter_guide.7bcef12e23aaa2a34734.gif",
     "static/media/memory_game.gif": "/static/media/memory_game.8733c8bb7f277ebafc12.gif",
@@ -23,11 +23,11 @@
     "static/media/inter-tight-vietnamese-400-normal.woff2": "/static/media/inter-tight-vietnamese-400-normal.2050feec02a8f71cac19.woff2",
     "static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.woff2": "/static/media/ibm-plex-sans-condensed-cyrillic-ext-400-normal.2105bac308c61321fc04.woff2",
     "index.html": "/index.html",
-    "main.21d46ae7.css.map": "/static/css/main.21d46ae7.css.map",
+    "main.c3113914.css.map": "/static/css/main.c3113914.css.map",
     "main.95256964.js.map": "/static/js/main.95256964.js.map"
   },
   "entrypoints": [
-    "static/css/main.21d46ae7.css",
+    "static/css/main.c3113914.css",
     "static/js/main.95256964.js"
   ]
 }
