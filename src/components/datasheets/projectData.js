@@ -16,6 +16,14 @@ const projectData = [
         image: images.memoryGame,
         sourceCode: 'https://github.com/emilydta/memory-card-game',
         demo: 'https://emilydta.github.io/memory-card-game'
+    },
+    {
+        title: 'WEATHER APP',
+        tech: ['HTML', 'CSS', 'TypeScript', 'Webpack'],
+        description: 'A web app that utilises third-party API\'s to gather real-time weather data and display it alongside custom background images. This project was completed as part of \'The Odin Project\' curriculum.',
+        image: images.weatherApp,
+        sourceCode: 'https://github.com/emilydta/weather-app',
+        demo: 'https://emilydta.github.io/weather-app'
     }
 ]
 
