@@ -10,7 +10,7 @@ function Skills() {
                         <li>CSS</li>
                         <li>Tailwind CSS</li>
                         <li>JavaScript</li>
-                        <li>Typescript</li>
+                        <li>TypeScript</li>
                         <li>Webpack</li>
                         <li>React</li>
                     </ul>
